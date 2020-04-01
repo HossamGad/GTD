@@ -1,0 +1,17 @@
+﻿@model Uppgifter
+<div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="thumbnail">
+        <img src="" alt="">
+        <div class="caption">
+            <h3 class="pull-right">("c")</h3>
+            <h3>
+                <a asp-controller="Uppgifter"
+                   asp-action="Details"
+                   asp-route-id="@Model.UppgiftId">@Model.UppgiftNamn</a>
+            </h3>
+            <p>@Model.Text</p>
+        </div>
+
+
+    </div>
+</div>

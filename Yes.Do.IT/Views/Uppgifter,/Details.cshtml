@@ -1,0 +1,21 @@
+﻿@model Uppgifter
+
+@using Microsoft.AspNetCore.Identity
+
+<h2>@Model.UppgiftNamn</h2>
+
+<div class="thumbnail">
+    <img alt="@Model.UppgiftNamn" >
+    <div class="caption-full">
+        <h3 class="pull-right"> </h3>
+        <h3>
+            <a href="#">@Model.UppgiftNamn</a>
+        </h3>
+        
+
+        <a asp-controller="Uppgifter" asp-action="UpdateUppgift1" asp-route-produktId="@Model.UppgiftId"><h2>Ändra uppgiften</h2></a>
+
+    </div>
+</div>
+
+

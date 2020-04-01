@@ -1,0 +1,20 @@
+﻿@model UppgifterListViewModel
+
+<h1>@Model.CurrentList</h1>
+
+<h1 class="col-xs-pull-6">Uppgifter</h1>
+
+@foreach (var Uppgifter in Model.Uppgifter)
+{
+    <partial name="_UppgiftCard" model="Uppgifter" />
+}
+
+
+
+
+<div class="pull-left">
+    <a asp-controller="Uppgifter" asp-action="NyUppgift1" asp-route-currentList="@Model.CurrentList"><h2>Lägga till en beställning</h2></a>
+</div>
+
+
+

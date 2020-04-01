@@ -1,0 +1,30 @@
+﻿@model Uppgifter
+
+
+    <form asp-action="UpdateUppgif1" asp-route-produktId="@Model.UppgiftId" method="post">
+        <h4> Din beställning </h4>
+        <!--
+    <div>
+        <input asp-for="ProduktId" value="@Context.Request.Query["ProduktId"]" type="hidden" />
+    </div>
+        -->
+        <!---
+    <div>
+        <label asp-for="CommentId">CommentId:</label>
+        <input asp-for="CommentId" value="@ViewBag.UppgifId" />
+    </div>
+        -->
+        <div>
+            <input asp-for="UppgiftId"required type="hidden"/>
+        </div>
+
+       
+     
+        
+        <div>
+            <input asp-for="MinListaId" required type="hidden"/>
+        </div>
+        <div>
+            <input type="submit" value="Complete" />
+        </div>
+    </form>

@@ -1,0 +1,19 @@
+﻿@model MinLista
+
+
+<form asp-action="NyLista" method="post">
+    <h4> Din projekt</h4>
+    
+       
+    <div>
+        <label asp-for="MinListaNamn">Listnamn:</label>
+        <input asp-for="MinListaNamn" required />
+    </div>
+    <div>
+        <label asp-for="Beskrivning">Beskrivning:</label>
+        <input asp-for="Beskrivning" required />
+    </div>
+    <div>
+        <input type="submit" value="Complete" />
+    </div>
+</form>

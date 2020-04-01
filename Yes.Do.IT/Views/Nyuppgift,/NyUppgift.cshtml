@@ -1,0 +1,31 @@
+﻿@model NyUppgift
+
+
+<form asp-action="NyUppgift1" method="post">
+    <h4> Din beställning </h4>
+    <div>
+        <input asp-for="UppgiftId" value="@Context.Request.Query["UppgiftId"]" type="hidden" />
+    </div>
+    <!---
+    <div>
+        <label asp-for="CommentId">CommentId:</label>
+        <input asp-for="CommentId" value="@ViewBag.ProduktId" />
+    </div>
+        -->
+    <div>
+        <label asp-for="Namn">namn:</label>
+        <input asp-for="Namn" />
+    </div>
+    <div>
+        <label asp-for="Text">Beskrivning:</label>
+        <input asp-for="Text" />
+    </div>
+    
+    <div>
+        <label asp-for="MinListaId">Projekt: </label>
+        <input asp-for="MinListaId" />
+    </div>
+    <div>
+        <input type="submit" value="Complete" />
+    </div>
+</form>

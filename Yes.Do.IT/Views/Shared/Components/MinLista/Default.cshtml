@@ -1,0 +1,18 @@
+﻿@model IEnumerable<MinLista>
+
+<a asp-controller="Uppgifter">
+</a>
+
+
+<ul>
+    @foreach (var MinLista in Model)
+    {
+        <li>
+            <a asp-controller="Uppgifter" asp-action="List"
+               asp-route-MinLista="@MinLista.MinListaNamn">@MinLista.MinListaNamn</a>
+        </li>
+    }
+    <li>
+        <a asp-controller="Uppgifter" asp-action="List" asp-route-Category="">Visa alla Uppgifter</a>
+    </li>
+</ul>
